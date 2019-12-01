@@ -1,4 +1,4 @@
-from rest_framework import viewsets, generics
+from rest_framework import viewsets
 from .serializers import *
 from .models import *
 from rest_framework.exceptions import NotFound
