@@ -3,7 +3,7 @@ from rest_framework import routers
 from . import views
 
 router = routers.DefaultRouter()
-router.register(r'characters', views.FullCharacterViewSet)
+router.register(r'characters', views.FullCharacterViewSet, basename='FullCharacterViewSet')
 router.register(r'^characters/(?P<id>.+)/$', views.CharacterViewSet, base_name='Character')
 router.register(r'^characters/(?P<id>.+)/comics', views.ComicViewSet, base_name='Comics')
 router.register(r'^characters/(?P<id>.+)/stories', views.StorieViewSet, base_name='Storie')
