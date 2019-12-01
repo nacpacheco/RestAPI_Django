@@ -8,6 +8,7 @@ class ComicSerializer(serializers.HyperlinkedModelSerializer):
         model = Comic
         fields = ('name', 'uri')
 
+
 class StorieSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Storie
@@ -30,7 +31,7 @@ class UrlSerializer(serializers.HyperlinkedModelSerializer):
 
 class CharacterSerializer(serializers.HyperlinkedModelSerializer):
     comic_set  =  ComicSerializer(many=True)
-    storie_set = StorieSerializer(many=True)
+    storie_set =  StorieSerializer(many=True)
     event_set  =  EventSerializer(many=True)
     serie_set  =  SerieSerializer(many=True)
     url_set = UrlSerializer(many=True)
