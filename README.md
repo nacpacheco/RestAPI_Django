@@ -52,6 +52,7 @@ GET: http://127.0.0.1:8000/characters/
 ```
 RESPONSE: [
     {
+        "id": 2,
         "name": "Captain Marvel",
         "description": "Near death, Carol Danvers was transformed into a powerful warrior for the Kree.",
         "modified": "2019-12-01T19:03:11.492244Z",
@@ -59,16 +60,19 @@ RESPONSE: [
         "uri": "https://www.marvel.com/characters/captain-marvel-carol-danve",
         "comic_set": [
             {
+                "id": 1,
                 "name": "Ms. Marvel (1977) #1",
                 "uri": "https://www.marvel.com/comics/issue/10287/ms_marvel_1977_1"
             },
             {
+                "id": 2,
                 "name": "Ms. Marvel (2006) #1",
                 "uri": "https://www.marvel.com/comics/issue/3949/ms_marvel_2006_1"
             }
         ],
         "storie_set": [
             {
+                "id": 1,
                 "name": "CMStorie #1",
                 "uri": "www.cmstorie.com",
                 "type": "storie"
@@ -76,24 +80,28 @@ RESPONSE: [
         ],
         "event_set": [
             {
+                "id": 1,
                 "name": "Captain Marvel Event #1",
                 "uri": "www.cmevent.com"
             }
         ],
         "serie_set": [
             {
+                "id": 1,
                 "name": "CM Serie #1",
                 "uri": "www.cmserie1.com"
             }
         ],
         "url_set": [
             {
+                "id": 1,
                 "uri": "https://pt.wikipedia.org/wiki/Captain_Marvel_(Marvel_Comics)",
                 "type": "wiki Captain Marvel"
             }
         ]
     },
     {
+        "id": 1,
         "name": "Hulk",
         "description": "Green guy",
         "modified": "2019-12-01T19:00:42.141893Z",
@@ -101,6 +109,7 @@ RESPONSE: [
         "uri": "https://www.marvel.com/characters/hulk-bruce-banner",
         "comic_set": [
             {
+                "id": 3,
                 "name": "Hulk (1977) #59",
                 "uri": "https://hulkcomic.com/59"
             }
@@ -111,6 +120,7 @@ RESPONSE: [
         "url_set": []
     },
     {
+        "id": 3,
         "name": "Spider-Man",
         "description": "Bit by a spider",
         "modified": "2019-12-01T22:09:01.292684Z",
@@ -118,6 +128,7 @@ RESPONSE: [
         "uri": "https://www.marvel.com/characters/spider-man-peter-parker",
         "comic_set": [
             {
+                "id": 4,
                 "name": "Superior Spider-Man (2013) #1",
                 "uri": "https://www.marvel.com/comics/issue/46462/superior_spider-man_2013_1"
             }
@@ -137,6 +148,7 @@ GET: http://127.0.0.1:8000/characters/[ID]
 ```
 ```
 RESPONSE: {
+    "id": 2,
     "name": "Captain Marvel",
     "description": "Near death, Carol Danvers was transformed into a powerful warrior for the Kree.",
     "modified": "2019-12-01T19:03:11.492244Z",
@@ -144,16 +156,19 @@ RESPONSE: {
     "uri": "https://www.marvel.com/characters/captain-marvel-carol-danve",
     "comic_set": [
         {
+            "id": 1,
             "name": "Ms. Marvel (1977) #1",
             "uri": "https://www.marvel.com/comics/issue/10287/ms_marvel_1977_1"
         },
         {
+            "id": 2,
             "name": "Ms. Marvel (2006) #1",
             "uri": "https://www.marvel.com/comics/issue/3949/ms_marvel_2006_1"
         }
     ],
     "storie_set": [
         {
+            "id": 1,
             "name": "CMStorie #1",
             "uri": "www.cmstorie.com",
             "type": "storie"
@@ -161,18 +176,21 @@ RESPONSE: {
     ],
     "event_set": [
         {
+            "id": 1,
             "name": "Captain Marvel Event #1",
             "uri": "www.cmevent.com"
         }
     ],
     "serie_set": [
         {
+            "id": 1,
             "name": "CM Serie #1",
             "uri": "www.cmserie1.com"
         }
     ],
     "url_set": [
         {
+            "id": 1,
             "uri": "https://pt.wikipedia.org/wiki/Captain_Marvel_(Marvel_Comics)",
             "type": "wiki Captain Marvel"
         }
@@ -188,10 +206,12 @@ GET: http://127.0.0.1:8000/characters/[ID]/comics
 ```
 RESPONSE:[
     {
+        "id": 1,
         "name": "Ms. Marvel (1977) #1",
         "uri": "https://www.marvel.com/comics/issue/10287/ms_marvel_1977_1"
     },
     {
+        "id": 2,
         "name": "Ms. Marvel (2006) #1",
         "uri": "https://www.marvel.com/comics/issue/3949/ms_marvel_2006_1"
     }
