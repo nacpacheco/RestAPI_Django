@@ -42,7 +42,7 @@ And it's up and running!
 
 Some examples of requests to try and use the endpoints. 
  
- ps: The database contains three characters (id 1 to 3) and few data
+ ps: The database contains three characters (id 1 to 3)
 
 ### List all Characters 
 ```
