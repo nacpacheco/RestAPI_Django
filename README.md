@@ -198,7 +198,7 @@ RESPONSE: {
 }
 ```
 
-### List Comics related do character
+### List Comics related to character
  [ID] = id of character 
 ```
 GET: http://127.0.0.1:8000/characters/[ID]/comics
