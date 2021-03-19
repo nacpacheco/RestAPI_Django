@@ -1,5 +1,5 @@
 Django==2.2.7
-djangorestframework==3.10.3
+djangorestframework==3.11.2
 pytz==2019.3
 setuptools==28.8.0
 six==1.13.0
